@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Backgrouds</title>
+
+    <style>
+        #firstPara{
+            background-color: red;
+            /* pargraph block height */
+            height: 100px; 
+            
+            /* paragraph block width */
+            width: 500px;
+
+            /* border width
+            border-width: 4px;
+
+            /* border style */
+            /* border-style: solid; */
+
+            /* color of border */
+            /* border-color: green;  */
+
+            /* for rouned border corners */
+            border-radius: 13px; 
+
+            /*We dont want to write all this so what we will do */
+            /* for border width, style, color*/
+            border: 12px solid green; 
+        }
+
+
+        #secondPara{
+            background-color: aqua;
+            height: 100px;
+            width: 500px;
+
+            /* border colors in all direction */
+
+            border-top: 12px solid yellow;
+            border-left: 12px solid green;
+            border-right: 12px solid;
+            border-bottom: 12px solid blue;
+
+
+            /* change border radius separately for every corner */
+            border-top-left-radius: 30px;
+            border-top-right-radius: 23px;
+            border-bottom-left-radius: 17px;
+            border-bottom-right-radius: 10px;
+        }
+
+        #thirdPara{
+            height: 100px;
+            width: 500px;
+
+            /* background image */
+            background-image: url('https://media.licdn.com/dms/image/D4D03AQEjyLe7R_0adg/profile-displayphoto-shrink_800_800/0/1669970577614?e=2147483647&v=beta&t=N4j0np8VF6Bkt_PSeDc8ZfS4XrhFS_eIV3X9eNLBhJI');
+
+            border: 2px solid red;
+            /* auto se image width automatic adjust ho jayegi*/
+            /* width: auto;  */
+            width: 1000px;
+            height: 1000px;
+
+            /* But image baar baar repeat ho rahi, usko rokne k liye use karenge ye, only x repeat use 'x-repeat', for y use 'y-repeat' */
+            background-repeat: no-repeat;
+
+            /* can use below methods to change positions of image */
+            background-position: center;
+            background-position: top;
+            background-position: left;
+            background-position: 120px bottom;
+            background-position: center center;
+            
+
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h2>Heights, width, Borders and Backgrouds in CSS</h2>
+
+    <h3>This is first Heading</h3>
+    <p id="firstPara">This is first Para</p>
+
+    <h3>This is second Heading</h3>
+    <p id="secondPara">This is first Para</p>
+    
+    <h3>This is third Heading</h3>
+    <p id="thirdPara">This is first Para</p>
+
+</body>
+</html>

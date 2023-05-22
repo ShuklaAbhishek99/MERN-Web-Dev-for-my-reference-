@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            /* jab tak override nahi hoga margin, border tab tak yahi default use hoga*/
+            margin: 0; 
+            padding: 0;
+        }
+
+        body{
+            background-color: cyan;
+        }
+
+
+        .container{
+            background-color: burlywood;
+            border: 3px solid rgb(64, 6, 119);
+            padding: 16px;
+            margin: 34px;
+
+            /* padding from sides, how to do that */
+            padding-top: 16px;
+            padding-right: 16px;
+            padding-bottom: 16px;
+            padding-left: 16px;
+
+            /* padding for top, right, bottom, left */
+            padding: 10px 14px 19px 56px; 
+
+            /* similary we can do for margin */
+            margin-top: 34px;
+            margin-right: 34px;
+            margin-bottom: 34px;
+            margin-left: 34px;
+
+            /* margin for top, right, bottom, left */
+            margin: 16px 20px 24px 28px;
+
+            margin: 34px 19px; /* y(top/bottom) x(left/right) */
+            padding: 14px 19px; /* y(top/bottom) x(left/right) */
+            border-radius: 23px;
+            width: 533px;
+
+            /* jab bhi padding ya margin change hoga width bhi change hone shuru
+                ho jayegi par hum chahte hain ki job bhi humne set ki hai width 
+                utni hi rahe toh hum "box-sizing border box" use karenge, 
+                size, actual width margin, padding, border se milkar banegi */
+            /* box-sizing: border-box; */
+        }
+
+        img{
+            margin: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet recusandae modi repellendus delectus nobis sed asperiores corporis magni explicabo optio provident dolorum saepe, veniam iste dolor quas illum. Incidunt, repudiandae!</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet recusandae modi repellendus delectus nobis sed asperiores corporis magni explicabo optio provident dolorum saepe, veniam iste dolor quas illum. Incidunt, repudiandae!</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet recusandae modi repellendus delectus nobis sed asperiores corporis magni explicabo optio provident dolorum saepe, veniam iste dolor quas illum. Incidunt, repudiandae!</p>
+    </div>
+
+    <div>
+        <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/CSS-Box-Model.png" alt="box-model-image" height="auto" width="500px" center>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and KeyFrames</title>
+    <style>
+        .container{
+            background-color: yellowgreen;
+        }
+
+        .box{
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+
+            /* Animation declaration, can give any name to it*/
+            animation: abhishek2;
+            /* duration of the animation */
+            animation-duration: 2s;
+
+            /* itne time k baad chalu hoga animation */
+            /* animation-delay: 3s; */
+
+            /* tells how many times this is work */
+            animation-iteration-count: 1;
+            /* this will run animation for infinite number of times */
+            /* animation-iteration-count: infinite; */
+
+            /* when the animation ends it will the space till "to" */
+            animation-fill-mode: forwards;
+
+            /* animation ho k wapas original positon ho jayega */
+            animation-fill-mode:initial;
+
+            /* animation shuru me dheere last me tez */
+            /* animation-timing-function: ease-in; */
+            
+            /* shuru me tez fir dheere */
+            /* animation-timing-function: ease-out; */
+
+            /* dheere tez dheere */
+            /* animation-timing-function: ease-in-out; */
+
+            /* animation-direction: reverse; */
+            
+            /* This is how you can use short-hand for animation properties */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+
+        /* animation keyframes using width */
+        @keyframes abhishek1 {
+            from{
+                /* starting of animation width */
+                width: 200px;
+            }
+            to{
+                /* elongate that animation till this width */
+                width: 1400px;
+            }
+        }
+
+        /* animation keyframe using Percentage(%), when animation time increases so as animation */
+        @keyframes abhishek2 {
+            0%{
+                top: 0px;
+                left: 0px
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+</html>

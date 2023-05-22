@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container{
+            width: 900px;
+            border: 3px solid purple;
+            background-color: rgb(250, 226, 205);
+            margin: 33px auto;
+        }
+        .item{
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(248, 238, 238);
+        }
+
+        #fruit{
+            float: left;
+            width: 48%;
+        }
+
+        #computer{
+            float: right;
+            width: 48%;
+        }
+
+        #stationary{
+            /* float: left; */
+
+            /* koi bhi left float element mere upar na aaye isliye mai "clear ka use karung" 
+                isi tarah clear right bhi , clear both dono side k allow nahi hoga fir*/
+            clear: both;
+            width: 100%;
+        }
+
+        p, h3{
+            text-align: right;
+            text-align: left;
+            text-align: justify;
+        }
+
+        h1{
+            text-align: center;
+            margin: 23px auto;
+            width: 455px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- <h2>Float & Clear Explained</h2>
+    <p>Here we will learn about alignment in HTML</p> -->
+
+    <div class="container">
+        <h1>Welcome To My Store</h1>
+
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitsPara" class="Para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti ea architecto, facilis voluptates corporis commodi asperiores assumenda, repudiandae doloremque maxime at, atque quaerat totam quidem reprehenderit ipsa rem qui. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore maiores repudiandae, odit perferendis in qui accusamus, cumque rem rerum neque temporibus earum laudantium. Tempora minima ullam fugit aut natus deleniti.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerPara" class="Para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus aliquam iure natus consequuntur libero eaque ab tempora fugit! Possimus voluptatibus, debitis quaerat illum at vero eligendi minus ullam laboriosam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore maiores repudiandae, odit perferendis in qui accusamus, cumque rem rerum neque temporibus earum laudantium. Tempora minima ullam fugit aut natus deleniti.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationaryPara" class="Para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore maiores repudiandae, odit perferendis in qui accusamus, cumque rem rerum neque temporibus earum laudantium. Tempora minima ullam fugit aut natus deleniti.</p>
+        </div>
+        <div id="glass" class="item">
+            <h3>Glass</h3>
+            <p id="glassPara" class="Para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore maiores repudiandae, odit perferendis in qui accusamus, cumque rem rerum neque temporibus earum laudantium. Tempora minima ullam fugit aut natus deleniti.</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            font-size: 72px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            display: none;
+        }
+
+        /* 0-300px me kahi bhi ho tab ye media querie fire ho jayegi */
+        @media (max-width: 300px){
+            #box1{
+                display: block;
+                background-color: cyan;
+            }
+        }
+
+        /* 301-500px me kahi bhi ho tab ye media querie fire ho jayegi */
+        @media (min-width: 301px) and (max-width: 500px){
+            #box2{
+                display: block;
+            }
+        }
+
+        /* 501-800px me kahi bhi ho tab ye media querie fire ho jayegi */
+        @media (min-width: 501px) and (max-width: 800px){
+            #box3{
+                display: block;
+                background-color: green;
+            }
+        }
+
+        /* 801px+ me kahi bhi ho tab ye media querie fire ho jayegi */
+        @media (min-width: 801px){
+            #box4{
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">mai ek iphone hu</div>
+    <div class="box" id="box2">mai ek tablet hu</div>
+    <div class="box" id="box3">mai ek computer hu</div>
+    <div class="box" id="box4">mai ek wide screen computer hu</div>
+</body>
+</html>

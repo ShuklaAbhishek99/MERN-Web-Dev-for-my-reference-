@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform in CSS</title>
+</head>
+<style>
+    /* the "*" selects all items or property applied for all items*/
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .container{
+        height: 80vh;
+        background: burlywood;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: brown;
+        border: 2px solid black;
+        border-radius: 8px;
+        height: 300px;
+        width: 300px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .box:hover{
+        /* transform: rotate(360deg); */ /*--> rotates*/
+        /* transform: skew(40deg); */ /*--> tilts*/
+        /* transform: scale(2); --> inscreases size */
+
+        /* moves in x-direction, use -ve sign to move in opposite direction*/
+        /* transform: translateX(23px); */
+        /* moves in y-direction, use -ve sign to move in opposite direction*/
+        /* transform: translateY(-23px); */
+
+        /* moves both in x-dir and y-dir */
+        transform: translate(123px, 123px);
+
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            This is my Box
+        </div>
+    </div>
+</body>
+</html>

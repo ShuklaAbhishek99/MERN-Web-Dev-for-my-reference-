@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <style>
+        /* Id Selector */
+        #redElement{
+            color: red;
+        }
+        #blueElement{
+            color: blue;
+        }
+
+        /* Class Selector */
+        .bgGreen{
+            background-color: green;
+        }
+
+        /* Group Selctor */
+        span, footer{
+            color: yellow;
+            background-color: blue;
+            
+        }
+
+        /* Element Selctor */
+        p{
+            border: 1px solid red;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h2>This is tutorial about CSS Selectors</h2>
+
+    <p class="bgGreen">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut repudiandae ipsam a. Nesciunt eligendi fugit, dignissimos labore enim tenetur cupiditate maxime, unde ea facere consectetur, eius tempora voluptatibus recusandae natus.</p>
+    <p id="blueElement" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut repudiandae ipsam a. Nesciunt eligendi fugit, dignissimos labore enim tenetur cupiditate maxime, unde ea facere consectetur, eius tempora voluptatibus recusandae natus.</p>
+    <p id="redElement" class="bgGreen">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut repudiandae ipsam a. Nesciunt eligendi fugit, dignissimos labore enim tenetur cupiditate maxime, unde ea facere consectetur, eius tempora voluptatibus recusandae natus.</p>
+
+    <div>
+        <span>This is a Span.</span>
+    </div>
+
+    <footer>This is Footer.</footer>
+    
+</body>
+</html>

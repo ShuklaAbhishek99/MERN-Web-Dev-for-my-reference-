@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position absolute, relative, fixed and sticky</title>
+
+    <style>
+        .container{
+            border: 2px solid;
+            background-color: khaki;
+            height: 3000px;
+        }
+
+        .box{
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+        }
+
+        /* There are 4 types of postion
+            position: static(default), absolute, relative, fixed, sticky */
+
+        #box3{
+            /* position:relative; means relative to its normal/original position and it will leave a gap*/
+
+            /* position: relative; */
+
+            /* position:sbsolute; means apne parent block se utni dur aur relate hoga apne first parent(closest parent) ki position se */
+
+            /* position:absolute;
+
+            top: 30px;
+            left: 130px; */
+
+            /* positon: fixed, is se uski position fixed ho jaati hai screen pe aur move scroll kar par bhi saath hi move hoti hai */
+
+            /* position: fixed; */
+            /* right: 4px; */
+
+            position: sticky;
+            top: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat with Us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+    
+</body>
+</html>
