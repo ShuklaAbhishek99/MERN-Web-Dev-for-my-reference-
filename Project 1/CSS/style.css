@@ -1,0 +1,116 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: url('../img/bg.jpg');
+    color: white;
+    font-family: 'Baloo 2', cursive;
+}
+
+/* .header{
+
+} */
+
+.left{
+    position: absolute;
+    left: 34px;
+    top: 20px;
+    /* border: 2px solid red; */
+    display: inline-block;
+}
+
+.left div{
+    line-height: 44px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+}
+
+.left img{
+    display: block;
+    margin: auto;
+    width: 90px;
+
+    /* this converts a black image to white and vice-versa */
+    /* filter: invert(100%); */
+}
+
+.center{
+    display: block;
+    margin: 20px auto;
+    width: 36%;
+    /* border: 2px solid yellow; */
+
+}
+
+.right{
+    position: absolute;
+    right: 34px;
+    top: 20px;
+    /* border: 2px solid green; */
+    display: inline-block;
+
+}
+
+.navbar li a:hover, .navbar li a.active{
+    color: gray;
+    text-decoration: underline;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li{
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    font-size: 25px;
+}
+
+.btn{
+    margin: 0px 9px;
+    padding: 4px 14px;
+    color: white;
+    background-color: black;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Baloo 2', cursive;
+
+}
+
+.btn:hover{
+    background-color: grey;
+}
+
+.container{
+    border: 2px solid white;
+    margin: 106px auto;
+    padding: 75px;
+    width: 33%;
+    border-radius: 28px;
+}
+
+.form-group input{
+    font-family: 'Baloo Bhai', cursive;
+    text-align: center;
+    display: block;
+    width: 508px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;
+}
+
+.container h1{
+    text-align: center;
+}
+
+.container button{
+    display: block;
+    margin: 20px auto;
+    width: 91%;
+}
