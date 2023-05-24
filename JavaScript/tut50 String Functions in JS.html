@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions in JS</title>
+</head>
+<body>
+    
+    <script>
+        var str = "This is a string";
+        console.log(str);
+
+        // First Occurence of a substring
+        var position = str.indexOf('is');
+        console.log(position);
+
+        // Last occurence of a substring
+        var position1 = str.lastIndexOf('is');
+        console.log(position1);
+
+        // Substring of a string
+        var subStr = str.slice(1,6); //in slice(1,6) '1' is inclusive while '6' is exclusive, slice can take -ve values which will print values from end
+
+        // for ex- slice(-1) prints 'g' and if we write slice(-1, -5) it won't work, instead write slice(-5), or if we write slice(-1 -2 -3) this will add'em and will print last '6' index's values(1+2+3)
+        console.log(subStr);
+
+        var subStr = str.substring(1,6); //both 'slice' and 'substring' are same except substring can't take negative values
+        console.log(subStr);
+
+        var subStr = str.substr(1,6); //in substr(1,6) both '1' & '6' is inclusive, or we can say start from index and till which length (or how many characters required)
+        console.log(subStr);
+
+        // replace chars or words in a string
+        var replaced = str.replace('is', 'iz'); //only replaces 1st occurence
+        console.log(replaced);
+
+        //this converts all string characters uppercase
+        console.log(str.toUpperCase());
+        // converts to lowercase
+        console.log(str.toLowerCase());
+
+        // adds up to string in the end
+        var newString = str.concat(' NewString');
+        console.log(newString);
+
+        // 
+        var strwithWhiteSpaces = "    this      is a whiteSpace string       ";
+        console.log(strwithWhiteSpaces);
+        // this only removes whitespace from start and end of string not from in between
+        console.log(strwithWhiteSpaces.trim());
+
+        // this returns character at that index
+        var char1 = str.charAt(2);
+        console.log(char1);
+
+        // this print ASCI/UTF code value of the character returned
+        var char1 = str.charCodeAt(2);
+        console.log(char1);
+
+        // can use index function
+        console.log(str[10]);
+
+    </script>
+</body>
+</html>
