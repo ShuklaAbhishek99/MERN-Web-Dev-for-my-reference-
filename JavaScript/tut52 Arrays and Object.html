@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>working</li>
+        </ul>
+    </div>
+
+    <script>
+        let myvar = 34;
+        let myvar1 = "string";
+        let myvar2 = true;
+        let myvar3 = null;
+        let myvar4 = undefined;
+
+        // Initialzing Object Manually, key:value pair
+        let employee = {
+            name: "Abhishek",
+            salary: "25",
+            website: "github.io"
+        }
+
+        console.log(employee);
+
+        // Array is special type of object
+        // Array can take values multiple datatypes
+        let names = [1, 20, 3, "Abhishek"];
+        console.log(names[3]);
+
+        // Creating an object with array
+        let name = new Array(1, 15, 3, "Abhishek", 45, 5);
+        // let name = new Array(45); -> creates an array of size 45
+        console.log(name);
+        console.log("Length of array is " + name.length);
+
+        // you can sort an array with but integer values can as it is and then comes string
+        names.sort();
+        console.log(names);
+        // name.reverse();
+        // console.log(names);
+        
+        // pushed values at the end
+        console.log(name);
+        name.push("hello");
+        console.log(name);
+
+    </script>
+</body>
+</html>

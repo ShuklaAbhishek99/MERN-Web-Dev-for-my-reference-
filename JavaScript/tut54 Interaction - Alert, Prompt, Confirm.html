@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction - Alert, Prompt, Confirm</title>
+</head>
+<body>
+    <h1>This tutorial is for making a page Interactive</h1>
+
+
+    <script>
+        //Alert in in-browser JavaScript
+        // This creates pop-up Modal message, it does not return anything
+        // alert("This is a Message");
+
+        // prompt(message, default argument)
+        // It takes input from the user(if not given by default it will take "default"), returns entered value
+        // let name = prompt("What is your name?", "Guest");
+        // let name = prompt("What is your name?");
+        // console.log(name);
+
+
+        // Confirm --> Used for double check
+        // have option of "ok" and "cancel", return true if "ok" and false if "cancel"
+        let deletePost = confirm("Do you really want to delete this post?");
+        // console.log(deletePost);
+
+        if(deletePost){
+            console.log("Your post has been deleted successfully");
+        }
+        else{
+            console.log("Your post has not been deleted");
+        }
+
+    </script>
+</body>
+</html>
