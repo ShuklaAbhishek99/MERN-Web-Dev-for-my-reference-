@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setinterval and SetTimeout</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is a container</h1>
+        Time Now is <span id="time"></span>
+    </div>    
+
+    <script>
+        // clearTimeout--> Allows us to run the function once after the set interval of time
+        // setTimeout--> Allows us to run the function repeatedly after the set interval of time
+
+        function greet(name){
+            console.log("Hello Good Morning! " + name);
+        }
+
+        // time is in miliseconds, after 2 seconds greet function will be executed, it can take multiple argument
+        timeout = setTimeout(greet, 2000, "Abhishek");
+        console.log(timeout); //gives a unique id
+        // setTimeout(greet(), 2000); --> You can't call a function inside the setTimeout
+
+        clearTimeout(timeout); //because of this the timeout will be clear and "setTimeout" will not be executed
+
+        // this will run the function every 1 sec and does it infinitely
+        Interval_id = setInterval(greet, 1000, "Abhishek");
+        clearInterval(Interval_id);//nothing will be printed
+
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;    
+        }
+
+        // setInterval(displayTime, 1000); -->This call will print current time every 1 second
+        // greet();
+    </script>
+</body>
+</html>
