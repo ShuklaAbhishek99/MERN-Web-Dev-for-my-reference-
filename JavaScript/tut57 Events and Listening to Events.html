@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Listening to Events</title>
+    <style>
+        #btn{
+            padding: 10px 14px;
+            background: red;
+            border: 2px solid black;
+            font-weight: bold;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    Browser Events:
+    <li>click</li>
+    <li>context menu</li>
+    <li>mouseover/mouseout</li>
+    <li>mouseup/mousedown</li> <!--mouse rt click and releasing-->
+    
+    <li>Submit</li>
+    <li>Focus</li>
+    <li>DOM content loaded</li>
+    <li>transitioned</li>
+
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat beatae, nemo recusandae voluptatem laboriosam consectetur, ducimus quos adipisci nam rerum perspiciatis eos dolorum, illo aliquam? Molestiae quae quo non quos, minus animi dolores similique dicta libero voluptatibus dolore fugit. Magnam ad tenetur necessitatibus odio nostrum, eos consequatur aliquam sunt esse, unde autem ut libero doloribus ex! Necessitatibus error culpa nihil eius, beatae nobis fugiat corrupti iusto debitis dolore officia voluptatem fuga accusamus neque placeat. Id iure qui harum maiores cumque. Ipsa, fugit quae magni quo exercitationem laudantium voluptatibus necessitatibus nisi repellat possimus alias sunt reprehenderit dolorem eaque enim accusantium eos odio in iure iusto ipsam hic sed dolorum aut. Cupiditate eveniet quibusdam illum blanditiis hic deserunt vero amet ratione sunt assumenda quam, cumque earum. Recusandae molestias reiciendis, molestiae, qui, illo vitae cumque expedita voluptas iste minus magni assumenda! Repellendus similique voluptas, animi non perferendis suscipit expedita tenetur, blanditiis dicta inventore iste! Omnis nihil eveniet perspiciatis praesentium? Dolorem, laudantium! Aperiam quia minima fugit magni corrupti quasi pariatur fuga eum quis saepe tempore consequatur natus accusantium vero hic quaerat accusamus unde nostrum omnis, et aspernatur, harum aliquam. Laudantium aliquam animi reiciendis numquam dignissimos quam recusandae itaque. Sunt possimus consectetur dignissimos fugit, repellendus fugiat molestiae saepe voluptate provident hic aliquam inventore? Minus magni expedita fuga modi a ad nemo autem perspiciatis alias! At corporis distinctio, pariatur quidem nobis voluptatum cupiditate, deleniti iusto eum voluptates unde error?</p>
+    </div>
+    
+    <!-- Clicking on button show/hide the paragraph -->
+    <!-- Can replace "onclick" with "ondblclick" or other option to get things in action -->
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+        function toggleHide(){
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+
+            if(para.style.display != 'none'){
+                para.style.display = 'none';
+            }
+            else{
+                para.style.display = 'block';
+            }
+
+        }
+        
+        //this creates a modal popup when cursor is inside the para
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            alert('Mouse Inside');
+        });
+
+        // Mouse outside para fires modal
+        para.addEventListener('mouseout', function run(){
+            alert('Mouse Outside');
+        });
+
+        
+    </script>
+</body>
+</html>
