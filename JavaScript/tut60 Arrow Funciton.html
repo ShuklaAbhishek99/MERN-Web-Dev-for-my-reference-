@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function in JS</title>
+</head>
+<body>
+    <div class="container">
+        This is arrow function tutorial.
+    </div>
+
+    <script>
+        // function greet(){
+        //     console.log("Good Morning!");
+        // }
+
+        // Arrow Function
+        let greet = ()=>{
+            console.log("Good Morning!");
+        }
+
+        // setTimeout(() => {
+        //     console.log("We are inside setTImeout")
+        // }, 1000);
+
+        // let sum = (a,b)=>{
+        //     return (a+b);
+        // }
+
+        // the above sum function can also be written as
+        let sum = (a,b) => a+b;
+
+        //more shorter version, works for if 1 parameter
+        let half = a => a/2;
+
+        greet = () => console.log("Good Morning!");
+
+        greet();
+
+        console.log(sum(34, 32));
+        console.log(half(5));
+
+        let obj1 ={
+            greetting: "Good Morning",
+            names : ["abhishek", "mohan", "SkillF"],
+            speak(){
+                // in this arrow function "this" is working because it takes it's parent's this
+                this.names.forEach((student) =>{
+                    console.log(this.greetting + " Kukdoo ko " + student);
+                })
+            }
+        }
+
+
+        // if we try to use by using "function" it won't take this value as it is out of its scope
+        // let obj1 ={
+        //     greetting: "Good Morning",
+        //     names : ["abhishek", "mohan", "SkillF"],
+        //     speak(){
+        //         this.names.forEach(function st (student){
+        //             console.log(this.greetting + " Kukdoo ko " + student);
+        //         })
+        //     }
+        // }
+
+        obj1.speak();
+    </script>
+    
+</body>
+</html>
