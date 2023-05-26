@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with JSON</title>
+</head>
+<body>
+    <!-- JSON = JavaScript Object Notation -->
+    <div class="container">
+        This is my container
+    </div>
+
+    <script>
+        let jsonObj = {
+            name: "Abhishek",
+            website: "github.io",
+            salary: 25
+        }
+
+        console.log(jsonObj);
+
+        //converting an object(jsonObj) to JSON string
+        let myJsonStr = JSON.stringify(jsonObj);
+        console.log(myJsonStr);
+
+        myJsonStr = myJsonStr.replace("Abhishek", "Shukla");
+        console.log(myJsonStr);
+
+        // parse takes a valid JSON string
+        newJsonObj = JSON.parse(myJsonStr);
+        console.log(newJsonObj);
+
+    </script>
+</body>
+</html>
