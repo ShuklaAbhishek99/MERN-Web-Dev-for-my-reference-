@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attribute & nth child pseudo selectors</title>
     <style>
-        .container{
+        .container {
             width: 233px;
             margin: auto;
             display: block;
 
         }
 
-        input{
+        input {
             display: block;
         }
 
         /* attributes can be targeted with this pseudo selector */
-        input[type = "text"]{
+        input[type="text"] {
             border: 2px solid red;
             padding: 23px;
         }
 
-        a[target]{
+        a[target] {
             font-size: 34px;
             color: violet;
         }
 
-        a[target = "_self"]{
+        a[target="_self"] {
             color: green;
         }
 
         /* Targeting nth child, it will set the property to nth child mentioned */
-        li:nth-child(3){
+        li:nth-child(3) {
             color: yellow;
         }
 
         /* all even will be affected */
-        li:nth-child(2n+0){
+        li:nth-child(2n+0) {
             color: blue;
         }
 
         /* for odd */
-        li:nth-child(odd){
+        li:nth-child(odd) {
             background-color: blueviolet;
         }
 
         /* for even */
-        li:nth-child(even){
+        li:nth-child(even) {
             background-color: greenyellow;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1><a href="https://www.google.com" target="_blank">Go To Google</a></h1>
@@ -77,4 +79,5 @@
         </ul>
     </div>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +8,35 @@
     <title>Variables and Custom Properties</title>
     <style>
         /* :root is just like global variable and anyone can access this */
-        :root{
+        :root {
             --primary-color: yellow;
             --danger-color: darkred;
             --madw: 733px;
         }
-        .container{
+
+        .container {
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        
-        .box{
+
+        .box {
             width: 200px;
             height: 200px;
             border: 2px solid var(--danger-color);
             margin: 2px 9px;
-            
+
             /* how to make a variable and implement it, variables are handy when we want to change any property
                 we can directly do it from here */
-            --box-color: violet; /*declaring variable*/
+            --box-color: violet;
+            /*declaring variable*/
             background-color: var(--box-color);
             box-shadow: var(--box-color);
-            
+
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="box"></div>
@@ -40,4 +44,5 @@
         <div class="box"></div>
     </div>
 </body>
+
 </html>

@@ -4,6 +4,7 @@
 // • npm view slugify version - to view version.
 // • npm i - to install deleted module folder
 // • npm --version - to view the version.
+
 // npm init initialize the package creation and then fill all the details
 // npm install slugify --> installs it, can also use npm i 
 // npm uninstall express --> uninstalls it
@@ -12,4 +13,4 @@
 // npm install nodemon --save-dev => command line utility
 // npm install nodemon --global => This installs globally so you can use it in any function
 // nodemon helps to reflects changes instantly
-console.log("This is 69");
+console.log("This is 69")

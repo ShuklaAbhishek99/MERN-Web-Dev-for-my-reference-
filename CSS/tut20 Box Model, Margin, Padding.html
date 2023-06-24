@@ -9,6 +9,9 @@
         *{
             box-sizing: border-box;
             /* jab tak override nahi hoga margin, border tab tak yahi default use hoga*/
+            /* box-sizing ka use
+            jab hum padding daalte hain box me toh box ka size bhi badh jata hai, kyuki size me width + border + padding aa jati hai
+            isliye hum use karte hain box-sizing jis se box same size ka rahta hai */
             margin: 0; 
             padding: 0;
         }
@@ -48,8 +51,8 @@
             width: 533px;
 
             /* jab bhi padding ya margin change hoga width bhi change hone shuru
-                ho jayegi par hum chahte hain ki job bhi humne set ki hai width 
-                utni hi rahe toh hum "box-sizing border box" use karenge, 
+                ho jayegi par hum chahte hain ki jo bhi humne set ki hai width 
+                utni hi rahe toh hum "box-sizing: border box" use karenge, 
                 size, actual width margin, padding, border se milkar banegi */
             /* box-sizing: border-box; */
         }
